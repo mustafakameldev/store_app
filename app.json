@@ -1,12 +1,8 @@
 {
   "expo": {
-    "name": "store_app",
-    "slug": "store_app",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "name": "Store Scanner ",
+    "slug": "store_scanner",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,11 +14,17 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "host.mospro.store_scanner",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.mospro.store_scanner",
+      "versionCode": 1,
+      "icon": "./assets/icon.png"
+    },
+    "description": "With this app you can make list of products, make bill of some products and scan QR and search over the internet"
   }
 }
