@@ -1,7 +1,8 @@
 import * as React from "react";
+import { StatusBar } from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "./screens/Home";
 import About from "./screens/About";
@@ -54,6 +55,7 @@ function HomeContainer({ navigation, route }) {
         component={Home}
         options={{
           title: "Products",
+          headerStatusBarHeight: 0,
           headerStyle: {
             backgroundColor: "#ededed",
           },
@@ -85,6 +87,7 @@ function ScanStack({ navigation, route }) {
         component={Scan}
         options={{
           title: "Scan Options",
+          headerStatusBarHeight: 0,
           headerStyle: {
             backgroundColor: "#ededed",
           },
@@ -129,7 +132,8 @@ function ScanStack({ navigation, route }) {
 export default function App() {
   const Drawer = createDrawerNavigator();
   return (
-    <NavigationContainer theme={DefaultTheme}>
+    <NavigationContainer>
+      <StatusBar barStyle="light-content" backgroundColor="#969696" />
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Settings" component={Settings} />

@@ -5,34 +5,35 @@ import Router from "../Router";
 const slides = [
   {
     key: 1,
-    title: "Title 1",
-    text: "Description.\nSay something cool",
+    title: " Scann List",
+    text:
+      " 1- Scan about a product over the internet \n 2- Scan for add items to your list of products \n 3- Scan for  make bills from your products  ",
     image: require("/home/mospro/Downloads/store_app/assets/scan_list.jpg"),
     backgroundColor: "#4284F3",
   },
   {
     key: 2,
-    title: "Title 2",
-    text: "Other cool stuff",
+    title: " Scanner ",
+    text: " scan easy and fast ..",
     image: require("/home/mospro/Downloads/store_app/assets/scan.jpg"),
     backgroundColor: "#8DEC95",
   },
+
   {
     key: 3,
-    title: "Rocket guy",
-    text: "I'm already out of descriptions\n\nLorem ipsum bla bla bla",
-    image: require("/home/mospro/Downloads/store_app/assets/bill.jpg"),
-    backgroundColor: "#FFCD40",
-  },
-  {
-    key: 4,
-    title: "Rocket guy",
-    text: "I'm already out of descriptions\n\nLorem ipsum bla bla bla",
+    title: "Products List",
+    text: "All your products will be at home",
     image: require("/home/mospro/Downloads/store_app/assets/list.jpg"),
     backgroundColor: "#DC665C",
   },
+  {
+    key: 4,
+    title: "make bill",
+    text: "make bill\n determine quantity for every bill item and press Done  ",
+    image: require("/home/mospro/Downloads/store_app/assets/bill.jpg"),
+    backgroundColor: "#FFCD40",
+  },
 ];
-
 export default class App extends React.Component {
   state = {
     showRealApp: false,

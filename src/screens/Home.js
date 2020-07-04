@@ -112,14 +112,13 @@ export default class Home extends Component {
   render() {
     if (this.state.refreshing) {
       return (
-        //loading view while data is loading
         <View style={{ flex: 1, paddingTop: 20 }}>
           <ActivityIndicator />
         </View>
       );
     } else {
       return (
-        <View style={{ flex: 1, marginTop: 30 }}>
+        <View style={{ flex: 1 }}>
           <FlatList
             data={this.state.products2}
             keyExtractor={(item) => item.id.toString()}

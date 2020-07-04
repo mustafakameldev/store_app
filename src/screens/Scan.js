@@ -32,7 +32,7 @@ export default class Scan extends Component {
             backgroundColor: "#2089dc",
             marginStart: 10,
             marginEnd: 10,
-            marginTop: 50,
+            marginTop: 150,
           }}
         />
         <Button
@@ -68,7 +68,7 @@ export default class Scan extends Component {
               style={{ marginStart: 7, marginEnd: 7 }}
             />
           }
-          title="add item to database "
+          title="add Product "
           type="clear"
           onPress={() => this.addProduct()}
           buttonStyle={{
